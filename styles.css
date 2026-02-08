@@ -22,6 +22,7 @@ body {
   letter-spacing: 0.01em;
   color: var(--ink);
   background: var(--coal);
+  overflow: hidden;
 }
 
 a {
@@ -97,6 +98,10 @@ a {
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.3em;
+}
+
+.topbar-minimal {
+  justify-content: center;
 }
 
 .topbar button {
@@ -205,6 +210,14 @@ a {
   letter-spacing: 0.3em;
   text-transform: uppercase;
   z-index: 2;
+}
+
+.scroll-indicator {
+  display: none;
+}
+
+.is-saved {
+  display: none;
 }
 
 .content {
