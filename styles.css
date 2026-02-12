@@ -22,7 +22,6 @@ body {
   letter-spacing: 0.01em;
   color: var(--ink);
   background: var(--coal);
-  overflow: hidden;
 }
 
 a {
@@ -205,20 +204,17 @@ a {
 .scroll-indicator {
   position: absolute;
   right: 8vw;
-  bottom: 24px;
+  bottom: 48px;
   font-size: 12px;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.scroll-indicator {
-  display: none;
-}
 
-.is-saved {
-  display: none;
-}
 
 .content {
   background: var(--paper);
@@ -248,12 +244,48 @@ a {
   letter-spacing: 0.18em;
 }
 
+.section h3 {
+  margin: 16px 0 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: rgba(17, 17, 17, 0.8);
+}
+
 .section p {
   margin: 0;
   max-width: 640px;
   line-height: 1.7;
   font-size: 15px;
   color: rgba(17, 17, 17, 0.75);
+}
+
+.section ul {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 8px;
+  color: rgba(17, 17, 17, 0.75);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: rgba(17, 17, 17, 0.7);
+  margin-top: 64px;
+}
+
+.back-link img {
+  width: 14px;
+  height: auto;
+  opacity: 0.7;
+  transform: rotate(180deg);
 }
 
 .panel-overlay {
