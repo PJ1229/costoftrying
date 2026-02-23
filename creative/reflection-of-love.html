@@ -16,62 +16,60 @@
     />
   </head>
   <body>
-    <main class="content">
+    <header class="hero hero-carousel" data-video-id="wdTdYssHSe4">
+      <div class="topbar topbar-overlay">
+        <button class="menu menu-toggle" type="button">Menu</button>
+        <div class="logo">cost of trying</div>
+        <span></span>
+      </div>
+      <button class="hero-still" type="button" aria-label="Play Reflection of Love">
+        <img src="../images/basketball/bball_still1.png" alt="Reflection of Love still 1" />
+        <span class="play-button" aria-hidden="true"></span>
+      </button>
+      <div class="hero-title hero-title-overlay">Reflection of Love</div>
+    </header>
+
+    <div class="video-modal" hidden>
+      <div class="video-modal-backdrop"></div>
+      <div class="video-modal-content" role="dialog" aria-modal="true">
+        <button class="video-close" type="button">Close</button>
+        <div class="video-frame">
+          <iframe
+            src=""
+            title="Reflection of Love"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-modal" hidden>
+      <div class="menu-backdrop"></div>
+      <div class="panel-drawer" role="dialog" aria-modal="true">
+        <div class="panel-header">
+          <span class="eyebrow">MENU</span>
+          <button type="button" class="panel-close menu-close">Close</button>
+        </div>
+        <nav class="panel-nav">
+          <a href="../index.html#writing">Writing</a>
+          <a href="../index.html#creative">Creative</a>
+          <a href="../index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+
+    <main class="content details">
       <section class="section">
-        <span class="eyebrow">Creative</span>
-        <h2>Reflection of Love</h2>
-        <p>There’s a part of you that never left</p>
-        <p>
-          I still have the letters you wrote me as we went off to college, and
-        </p>
-        <p>
-          I still have the sugar chapstick you left in my car on our first date
-        </p>
-        <p>
-          A lot of me is ashamed to admit that I’ll never forget
-        </p>
-        <p>but forgetting doesn’t mean moving on</p>
-        <p>
-          Moving on means being content with the silent intimacy of sharing
-          moments that no one else will ever have
-        </p>
-        <p>
-          Being happy but not in the joyous way that brings a smile to your
-          face.
-        </p>
-        <p>
-          Being happy in the way that gives you satisfaction in that you’ve
-          tried.
-        </p>
-        <p>I’m now 20</p>
-        <p>3 years removed from saying the words “I love you”</p>
-        <p>but for the first time I’m learning what love actually is</p>
-        <p>it’s not an explosion that hits you all at once</p>
-        <p>
-          it’s a small fire that needs protection from the gusts of air and the
-          rain
-        </p>
-        <p>
-          but eventually it grows so tall that even the harshest storm won’t
-          blow it out
-        </p>
-        <p>Sometimes it grows too hot that it burns</p>
-        <p>But it’ll always be there to keep you warm.</p>
-        <div class="grid">
-          <div class="tile">
-            <img src="../images/basketball/bball_still1.png" alt="Reflection of Love still 1" />
+        <div class="details-grid">
+          <div>
+            <span class="eyebrow">Written and directed by</span>
+            <p>PJ Kim</p>
           </div>
-          <div class="tile">
-            <img src="../images/basketball/bball_still3.png" alt="Reflection of Love still 2" />
-          </div>
-          <div class="tile">
-            <img src="../images/basketball/bball_still4.png" alt="Reflection of Love still 3" />
-          </div>
-          <div class="tile">
-            <img src="../images/basketball/bball_still5.png" alt="Reflection of Love still 4" />
-          </div>
-          <div class="tile">
-            <img src="../images/basketball/bball_still6.png" alt="Reflection of Love still 5" />
+          <div>
+            <span class="eyebrow">Format</span>
+            <p>Poem</p>
           </div>
         </div>
         <p>
@@ -82,5 +80,6 @@
         </p>
       </section>
     </main>
+    <script src="../script.js" defer></script>
   </body>
 </html>
