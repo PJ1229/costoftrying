@@ -569,8 +569,8 @@ a {
 
 .panel-nav {
   display: grid;
-  gap: 16px;
-  font-size: 22px;
+  gap: 8px;
+  font-size: 26px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
