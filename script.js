@@ -20,6 +20,7 @@ if (hero && films.length) {
       .filter(Boolean);
   };
 
+  const storageKey = "costoftrying.activeFilm";
   let cycleId = null;
   let frameIndex = 0;
   let activeFilm = films[0];
@@ -45,10 +46,25 @@ if (hero && films.length) {
     }
   };
 
+  const storedTitle = window.localStorage?.getItem(storageKey);
+  if (storedTitle) {
+    const match = Array.from(films).find((film) =>
+      film.textContent.trim().includes(storedTitle)
+    );
+    if (match) {
+      activeFilm = match;
+    }
+  }
+
   startCycle(activeFilm);
 
   films.forEach((film) => {
     film.addEventListener("mouseenter", () => startCycle(film));
+    film.addEventListener("click", () => {
+      const title = film.firstChild?.textContent?.trim() || film.textContent.trim();
+      window.localStorage?.setItem(storageKey, title);
+      startCycle(film);
+    });
   });
 }
 

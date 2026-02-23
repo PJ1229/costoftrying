@@ -178,7 +178,7 @@ a {
 .lineup {
   position: relative;
   z-index: 2;
-  margin-top: 40px;
+  margin-top: 12px;
 }
 
 .lineup ul {
@@ -186,7 +186,7 @@ a {
   padding: 0;
   margin: 0;
   display: grid;
-  gap: 12px;
+  gap: 4px;
 }
 
 .lineup li {
@@ -398,6 +398,12 @@ a {
   font-size: 14px;
   line-height: 1.6;
   color: rgba(17, 17, 17, 0.7);
+}
+
+.tile img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .footer {
