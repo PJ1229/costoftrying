@@ -121,6 +121,7 @@ if (heroCarousel && heroStill) {
   heroStill.addEventListener("click", openVideoModal);
   heroCarousel.addEventListener("click", (event) => {
     if (event.target.closest(".menu-toggle")) return;
+    if (event.target.closest(".logo")) return;
     if (event.target.closest(".video-modal")) return;
     if (event.target.closest(".menu-modal")) return;
     openVideoModal();
