@@ -407,8 +407,8 @@ a {
 
 .scroll-indicator {
   position: absolute;
-  right: 8vw;
-  bottom: 48px;
+  right: 4vw;
+  bottom: 40px;
   font-size: 12px;
   letter-spacing: 0.3em;
   text-transform: uppercase;
@@ -651,7 +651,7 @@ a {
   letter-spacing: 0.28em;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 900px) {
   .topbar {
     font-size: 10px;
   }
