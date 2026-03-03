@@ -29,28 +29,9 @@ a {
   text-decoration: none;
 }
 
-.page {
-  min-height: 100vh;
-}
-
-.grain {
-  pointer-events: none;
-  position: fixed;
-  inset: -150%;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='0.35'/%3E%3C/svg%3E");
-  mix-blend-mode: soft-light;
-  opacity: 0.35;
-  animation: grainShift 6s steps(6) infinite;
-  z-index: 4;
-}
-
-@keyframes grainShift {
-  0% {
-    transform: translate3d(-10%, -10%, 0);
-  }
-  100% {
-    transform: translate3d(10%, 10%, 0);
-  }
+.minimal a {
+  text-decoration: underline;
+  color: rgba(17, 17, 17, 0.7);
 }
 
 .hero {
@@ -517,23 +498,6 @@ a {
   transform: rotate(180deg);
 }
 
-.panel-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(8, 8, 8, 0.8);
-  display: flex;
-  justify-content: flex-start;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
-  z-index: 10;
-}
-
-.panel-overlay.is-open {
-  opacity: 1;
-  pointer-events: auto;
-}
-
 .panel-drawer {
   width: min(420px, 90vw);
   height: 100%;
@@ -545,10 +509,6 @@ a {
   display: grid;
   align-content: start;
   gap: 32px;
-}
-
-.panel-overlay.is-open .panel-drawer {
-  transform: translateX(0);
 }
 
 .panel-header {
@@ -691,5 +651,76 @@ a {
 
   .details .details-grid p {
     font-size: 36px;
+  }
+}
+
+.minimal-page {
+  background: #ffffff;
+  color: #111111;
+}
+
+.minimal {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 72px 24px 104px;
+  display: grid;
+  gap: 24px;
+}
+
+.minimal-header {
+  font-size: 28px;
+  letter-spacing: 0;
+  text-transform: none;
+  color: #111111;
+  font-weight: 600;
+}
+
+.minimal .eyebrow {
+  margin: 0;
+}
+
+.intro h1 {
+  margin: 0 0 12px;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: rgba(17, 17, 17, 0.6);
+}
+
+.intro p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(17, 17, 17, 0.6);
+}
+
+.intro p.stacked {
+  margin-top: 4px;
+}
+
+
+.photo-wrapper {
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.photo-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 640px) {
+  .minimal {
+    padding: 56px 20px 96px;
+  }
+
+  .intro h1 {
+    font-size: 30px;
+  }
+
+  .intro p {
+    font-size: 16px;
   }
 }
