@@ -339,6 +339,7 @@
             var params = new URLSearchParams({
               autoplay: "1",
               mute: "1",
+              enablejsapi: "1",
               modestbranding: "1",
               playsinline: "1",
               controls: "0",
@@ -362,6 +363,43 @@
             iframe.referrerPolicy = "strict-origin-when-cross-origin";
             shell.appendChild(iframe);
             wrap.replaceChildren(shell);
+
+            var ytOrigin = "https://www.youtube.com";
+            function postMute() {
+              try {
+                if (!iframe.contentWindow) return;
+                iframe.contentWindow.postMessage(
+                  JSON.stringify({
+                    event: "command",
+                    func: "mute",
+                    args: "",
+                    id: 1,
+                  }),
+                  ytOrigin
+                );
+              } catch (e) {}
+            }
+            var lastRemuteMs = 0;
+            function onYtPlayerMessage(ev) {
+              if (ev.source !== iframe.contentWindow || ev.origin !== ytOrigin) return;
+              if (typeof ev.data !== "string") return;
+              var now = Date.now();
+              if (now - lastRemuteMs < 180) return;
+              lastRemuteMs = now;
+              if (
+                ev.data.indexOf("infoDelivery") !== -1 ||
+                ev.data.indexOf("onStateChange") !== -1
+              ) {
+                postMute();
+              }
+            }
+            window.addEventListener("message", onYtPlayerMessage);
+            iframe.addEventListener("load", function onMainEmbedLoad() {
+              iframe.removeEventListener("load", onMainEmbedLoad);
+              postMute();
+              setTimeout(postMute, 400);
+              setTimeout(postMute, 1200);
+            });
           });
         }
         document.querySelectorAll(".minimal-embed-youtube").forEach(wireEmbed);
