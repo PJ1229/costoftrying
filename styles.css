@@ -809,10 +809,20 @@ a {
 .minimal-youtube-clip iframe {
   position: absolute;
   inset: 0;
+  z-index: 0;
   width: 100%;
   height: 100%;
   border: 0;
   display: block;
+}
+
+/* Blocks pointer events from reaching YouTube so hover UI does not appear */
+.minimal-youtube-clip__shield {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: inherit;
+  background: transparent;
 }
 
 .intro.minimal-block.minimal-block--with-ctas {
@@ -877,43 +887,6 @@ a {
   gap: var(--minimal-rhythm-tight);
   justify-content: center;
   align-items: center;
-}
-
-.next-cta-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 12px 22px;
-  border-radius: 12px;
-  border: 1px solid rgba(17, 17, 17, 0.22);
-  background: #ffffff;
-  color: rgba(17, 17, 17, 0.52);
-  font-family: inherit;
-  font-size: 17px;
-  font-weight: 400;
-  letter-spacing: 0.01em;
-  line-height: 1.45;
-  text-decoration: none;
-  box-sizing: border-box;
-  min-height: 44px;
-  transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
-}
-
-.minimal .next-cta-link {
-  text-decoration: none;
-  color: rgba(17, 17, 17, 0.52);
-}
-
-.next-cta-link:hover,
-.next-cta-link:focus-visible {
-  border-color: rgba(17, 17, 17, 0.35);
-  background: rgba(17, 17, 17, 0.03);
-  color: rgba(17, 17, 17, 0.72);
-}
-
-.next-cta-link:focus-visible {
-  outline: 2px solid rgba(17, 17, 17, 0.25);
-  outline-offset: 2px;
 }
 
 .feature-video {
@@ -1065,6 +1038,17 @@ a {
   font-size: 15px;
   line-height: 1.6;
   color: rgba(17, 17, 17, 0.65);
+}
+
+.signup-dialog__body a {
+  color: rgba(17, 17, 17, 0.82);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.signup-dialog__body a:hover,
+.signup-dialog__body a:focus-visible {
+  color: #111111;
 }
 
 .signup-dialog__form {
