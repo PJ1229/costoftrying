@@ -4,11 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>costoftrying</title>
-    <meta name="description" content="authentic storytelling" />
+    <meta
+      name="description"
+      content="Building communities and inspiring creators through stories and events."
+    />
     <link rel="icon" type="image/svg+xml" href="images/logo/favicon.svg" />
     <link rel="stylesheet" href="styles.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <!-- Google tag (gtag.js) -->
@@ -29,84 +32,226 @@
   <body class="minimal-page">
     <main class="minimal">
       <header class="minimal-header">
-        <p class="eyebrow">
+        <p class="minimal-headline">
           building communities &amp;<br />
-          inspiring creators.
+          inspiring creators
+        </p>
+        <div class="minimal-vibes intro">
+          <div class="retreat-feature-audio">
+            <audio
+              class="retreat-feature-audio__player"
+              controls
+              preload="metadata"
+              src="music/fred-again-dermot-see-yourself-in-my-eyes.mp3"
+            >
+              <a
+                href="music/fred-again-dermot-see-yourself-in-my-eyes.mp3"
+                download
+                >download the track</a
+              >
+            </audio>
+          </div>
+          <p>(play this for vibes while you scroll)</p>
+        </div>
+        <p class="minimal-subhead">
+          the best ideas are created through diverse and inclusive communities.
+          we are amplifying these communities through stories and events.
         </p>
       </header>
 
-      <section class="intro">
-        <p>hi!</p>
-        <p class="stacked">
-          my name is
-          <a href="https://pjk1m.com/" target="_blank" rel="noopener noreferrer"
-            >PJ</a
-          >
+      <section class="intro retreat-stack">
+        <p>
+          we just hosted a retreat with 20+ creatively ambitious strangers in
+          northern michigan to explore projects they’ve always wanted to.
         </p>
+        <button
+          type="button"
+          class="retreat-next-btn js-open-retreat-dialog"
+          id="open-retreat-dialog"
+          aria-haspopup="dialog"
+          aria-controls="retreat-dialog"
+        >
+          to be a part of the next one - stay in touch
+        </button>
+        <div class="feature-video" aria-label="Retreat recap video">
+          <div class="photo-wrapper photo-wrapper--embed">
+            <div
+              class="minimal-embed-youtube"
+              data-youtube-id="Eb6kjOybPdw"
+              data-youtube-title="TMC retreat trailer"
+            >
+              <button
+                type="button"
+                class="minimal-embed-youtube__facade"
+                aria-label="Play TMC retreat trailer"
+              >
+                <img
+                  src="https://img.youtube.com/vi/Eb6kjOybPdw/maxresdefault.jpg"
+                  alt=""
+                  width="1280"
+                  height="720"
+                  loading="lazy"
+                  decoding="async"
+                  fetchpriority="low"
+                />
+                <span class="minimal-embed-youtube__play" aria-hidden="true"></span>
+              </button>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section class="intro">
-        <p>
-          i believe the best ideas are created through diverse and inclusive
-          communities.
-        </p>
+      <section class="partners" aria-labelledby="partners-heading">
+        <p class="minimal-eyebrow" id="partners-heading">we've partnered with</p>
+        <ul class="partners-logos">
+          <li>
+            <a
+              href="https://www.instagram.com/themidnight.collective/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="partners-logo-link"
+            >
+              <img
+                src="images/partners/tmc.png"
+                alt="The Midnight Club"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://v1michigan.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="partners-logo-link partners-logo-link--invert"
+            >
+              <img
+                src="images/partners/v1.png"
+                alt="V1 Michigan"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://shiftcreator.space/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="partners-logo-link partners-logo-link--invert partners-logo-link--crush"
+            >
+              <img
+                src="images/partners/shift.png"
+                alt="Shift"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </li>
+        </ul>
       </section>
 
-      <section class="intro">
+      <hr class="minimal-rule" />
+
+      <section class="intro minimal-block" aria-labelledby="building-heading">
+        <p class="minimal-block-title" id="building-heading">what we're building</p>
         <p>
-          i’m currently planning a creative retreat in northern michigan
-          alongside
+          some of the most interesting people are already out there, in your
+          school, your city, your community, with projects they've been sitting
+          on and passions they haven't had the time to explore. they just
+          haven't found each other yet.
+        </p>
+        <p>
+          we help existing communities create the space for that to happen.
+          through storytelling, events, and shared creative time, we amplify
+          what's already there, connecting the creative and technical people who
+          are ready to finally try something.
+        </p>
+        <div
+          class="minimal-block-clip"
+          role="group"
+          aria-label="Short muted clip (loops)"
+        >
+          <div class="minimal-youtube-clip">
+            <iframe
+              src="https://www.youtube.com/embed/aO7lKvHd0B8?autoplay=1&mute=1&loop=1&playlist=aO7lKvHd0B8&modestbranding=1&playsinline=1&controls=0&fs=0&rel=0"
+              title="Short clip related to what we're building (muted, looping)"
+              width="560"
+              height="315"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <hr class="minimal-rule" />
+
+      <section
+        class="intro minimal-block minimal-block--with-ctas"
+        aria-labelledby="next-heading"
+      >
+        <p class="minimal-block-title" id="next-heading">what's next.</p>
+        <p>
+          this fall, we're partnering with
           <a
             href="https://www.instagram.com/themidnight.collective/"
             target="_blank"
             rel="noopener noreferrer"
             >the midnight club</a
-          >. we’re accepting 15-25 creators, so if you’re interested
+          >
+          to bring weekly sunday night work sessions to their community, open
+          drop-in time for anyone to show up and work on whatever they've been
+          putting off. no agenda, no pressure. just a room full of people doing
+          the thing.
+        </p>
+        <p>
+          we're always looking for communities to work with. if you're building
+          something and want to tell its story or create more space for your
+          people,
+          <a href="mailto:costoftrying@gmail.com">reach out</a>.
+        </p>
+        <div
+          class="minimal-block-clip"
+          role="group"
+          aria-label="Short muted clip (loops)"
+        >
+          <div class="minimal-youtube-clip">
+            <iframe
+              src="https://www.youtube.com/embed/g_yV5CzVu2w?autoplay=1&mute=1&loop=1&playlist=g_yV5CzVu2w&modestbranding=1&playsinline=1&controls=0&fs=0&rel=0"
+              title="Short clip related to what's next (muted, looping)"
+              width="560"
+              height="315"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="next-ctas" role="group" aria-label="get involved">
+          <button
+            type="button"
+            class="retreat-next-btn js-open-retreat-dialog"
+            aria-haspopup="dialog"
+            aria-controls="retreat-dialog"
+          >
+            stay in touch
+          </button>
           <a
-            href="https://forms.gle/8XATZUz2pXuhP6XW7"
+            class="next-cta-link"
+            href="https://www.instagram.com/costoftrying/"
             target="_blank"
             rel="noopener noreferrer"
-            >apply here</a
-          >.
-        </p>
-        <div class="photo-wrapper">
-          <img
-            src="images/home/tmcretreat.png"
-            alt="group of creators sitting by the water at night"
-          />
+            >follow along</a
+          >
         </div>
       </section>
 
-      <section class="intro">
+      <section class="intro intro--footer">
         <p>
-          i love growth specifically through meaningful storytelling, and the
-          goal with costoftrying.com is to amplify creators and connect people
-          through stories and events.
-        </p>
-      </section>
-
-      <section class="intro">
-        <p>
-          i’m building the university of michigan’s
-          <a href="https://v1michigan.com/" target="_blank" rel="noopener noreferrer"
-            >startup community</a
-          >, along with a couple creative spaces here such as
-          <a href="https://shiftcreator.space/" target="_blank" rel="noopener noreferrer"
-            >shift</a
-          >
-          and
-          <a
-            href="https://www.instagram.com/themidnight.collective/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >tmc</a
-          >.
-        </p>
-      </section>
-
-      <section class="intro">
-        <p>
-          so if you are a creator looking for a new perspective, hmu
+          more soon. follow
           <a
             href="https://www.instagram.com/costoftrying/"
             target="_blank"
@@ -116,5 +261,188 @@
         </p>
       </section>
     </main>
+
+    <dialog class="signup-dialog" id="retreat-dialog" aria-labelledby="retreat-dialog-title">
+      <div class="signup-dialog__panel">
+        <button type="button" class="signup-dialog__close" aria-label="Close">
+          ×
+        </button>
+        <h2 class="signup-dialog__title" id="retreat-dialog-title">next event</h2>
+        <p class="signup-dialog__body">
+          we are planning the next event and will share dates, location, and how
+          to join when things are ready. add yourself to the interest list and
+          you’ll hear from us first.
+        </p>
+        <form
+          class="signup-dialog__form"
+          id="retreat-signup-form"
+          action="https://formspree.io/f/YOUR_FORM_ID"
+          method="POST"
+        >
+          <label class="signup-dialog__label" for="retreat-email">email</label>
+          <input
+            type="email"
+            id="retreat-email"
+            name="email"
+            class="signup-dialog__input"
+            autocomplete="email"
+            inputmode="email"
+            placeholder="you@example.com"
+            required
+          />
+          <input
+            type="text"
+            name="_gotcha"
+            class="signup-dialog__hp"
+            tabindex="-1"
+            autocomplete="off"
+            aria-hidden="true"
+          />
+          <input type="hidden" name="_subject" value="costoftrying: next event interest" />
+          <p class="signup-dialog__error" id="retreat-signup-error" role="alert" hidden></p>
+          <button type="submit" class="signup-dialog__submit">stay in touch</button>
+        </form>
+        <p class="signup-dialog__success" id="retreat-signup-success" hidden>
+          you’re on the list. talk soon.
+        </p>
+        <p class="signup-dialog__note">we only use this for event updates.</p>
+      </div>
+    </dialog>
+
+    <script>
+      (function () {
+        function wireEmbed(wrap) {
+          var id = wrap.dataset.youtubeId;
+          var title = wrap.dataset.youtubeTitle || "YouTube video";
+          var btn = wrap.querySelector(".minimal-embed-youtube__facade");
+          if (!id || !btn) return;
+          btn.addEventListener("click", function () {
+            var shell = document.createElement("div");
+            shell.className = "video-frame video-frame--embed";
+            var iframe = document.createElement("iframe");
+            var params = new URLSearchParams({
+              autoplay: "1",
+              mute: "1",
+              modestbranding: "1",
+              playsinline: "1",
+              controls: "0",
+              fs: "0",
+              rel: "0",
+            });
+            if (/^https?:$/i.test(location.protocol)) {
+              params.set("origin", location.origin);
+            }
+            iframe.src =
+              "https://www.youtube.com/embed/" +
+              encodeURIComponent(id) +
+              "?" +
+              params.toString();
+            iframe.title = title;
+            iframe.setAttribute(
+              "allow",
+              "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            );
+            iframe.setAttribute("allowfullscreen", "");
+            iframe.referrerPolicy = "strict-origin-when-cross-origin";
+            shell.appendChild(iframe);
+            wrap.replaceChildren(shell);
+          });
+        }
+        document.querySelectorAll(".minimal-embed-youtube").forEach(wireEmbed);
+
+        var dialog = document.getElementById("retreat-dialog");
+        var closeBtn = dialog && dialog.querySelector(".signup-dialog__close");
+        if (dialog) {
+          document.querySelectorAll(".js-open-retreat-dialog").forEach(function (btn) {
+            btn.addEventListener("click", function () {
+              dialog.showModal();
+            });
+          });
+        }
+        if (dialog && closeBtn) {
+          closeBtn.addEventListener("click", function () {
+            dialog.close();
+          });
+        }
+        if (dialog) {
+          dialog.addEventListener("click", function (e) {
+            if (e.target === dialog) {
+              dialog.close();
+            }
+          });
+          dialog.addEventListener("close", function () {
+            var f = document.getElementById("retreat-signup-form");
+            var ok = document.getElementById("retreat-signup-success");
+            var err = document.getElementById("retreat-signup-error");
+            if (f && ok) {
+              f.hidden = false;
+              f.reset();
+              ok.hidden = true;
+            }
+            if (err) {
+              err.hidden = true;
+              err.textContent = "";
+            }
+          });
+        }
+
+        var signupForm = document.getElementById("retreat-signup-form");
+        var signupErr = document.getElementById("retreat-signup-error");
+        var signupOk = document.getElementById("retreat-signup-success");
+        if (signupForm && signupErr && signupOk) {
+          signupForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+            signupErr.hidden = true;
+            signupErr.textContent = "";
+            var action = signupForm.getAttribute("action") || "";
+            if (action.indexOf("YOUR_FORM_ID") !== -1) {
+              signupErr.textContent =
+                "add your Formspree id: replace YOUR_FORM_ID in the form action in index.html.";
+              signupErr.hidden = false;
+              return;
+            }
+            var submitBtn = signupForm.querySelector(".signup-dialog__submit");
+            if (submitBtn) submitBtn.disabled = true;
+            var fd = new FormData(signupForm);
+            fetch(action, {
+              method: "POST",
+              body: fd,
+              headers: { Accept: "application/json" },
+            })
+              .then(function (res) {
+                if (res.ok) {
+                  signupForm.hidden = true;
+                  signupOk.hidden = false;
+                  return;
+                }
+                return res
+                  .json()
+                  .then(function (data) {
+                    var msg =
+                      (data && data.error) ||
+                      (data.errors &&
+                        data.errors[0] &&
+                        data.errors[0].message) ||
+                      "something went wrong. try again in a moment.";
+                    signupErr.textContent = msg;
+                    signupErr.hidden = false;
+                  })
+                  .catch(function () {
+                    signupErr.textContent =
+                      "something went wrong. try again in a moment.";
+                    signupErr.hidden = false;
+                  });
+              })
+              .catch(function () {
+                signupErr.textContent = "couldn’t reach the form. check your connection.";
+                signupErr.hidden = false;
+              })
+              .finally(function () {
+                if (submitBtn) submitBtn.disabled = false;
+              });
+          });
+        }
+      })();
+    </script>
   </body>
 </html>
