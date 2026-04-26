@@ -428,6 +428,8 @@
             var f = document.getElementById("retreat-signup-form");
             var ok = document.getElementById("retreat-signup-success");
             var err = document.getElementById("retreat-signup-error");
+            var note = dialog.querySelector(".signup-dialog__note");
+            var submitBtn = f && f.querySelector(".signup-dialog__submit");
             if (f && ok) {
               f.hidden = false;
               f.reset();
@@ -436,6 +438,14 @@
             if (err) {
               err.hidden = true;
               err.textContent = "";
+            }
+            if (note) note.hidden = false;
+            if (submitBtn) {
+              submitBtn.disabled = false;
+              submitBtn.removeAttribute("aria-busy");
+              if (submitBtn.dataset.labelDefault) {
+                submitBtn.textContent = submitBtn.dataset.labelDefault;
+              }
             }
           });
         }
@@ -456,7 +466,15 @@
               return;
             }
             var submitBtn = signupForm.querySelector(".signup-dialog__submit");
-            if (submitBtn) submitBtn.disabled = true;
+            var note = dialog && dialog.querySelector(".signup-dialog__note");
+            if (submitBtn) {
+              if (!submitBtn.dataset.labelDefault) {
+                submitBtn.dataset.labelDefault = submitBtn.textContent || "submit";
+              }
+              submitBtn.disabled = true;
+              submitBtn.setAttribute("aria-busy", "true");
+              submitBtn.textContent = "sending...";
+            }
             var fd = new FormData(signupForm);
             fetch(action, {
               method: "POST",
@@ -467,6 +485,18 @@
                 if (res.ok) {
                   signupForm.hidden = true;
                   signupOk.hidden = false;
+                  if (note) note.hidden = true;
+                  if (submitBtn) {
+                    submitBtn.textContent = "added";
+                    submitBtn.removeAttribute("aria-busy");
+                  }
+                  if (dialog) {
+                    setTimeout(function () {
+                      try {
+                        dialog.close();
+                      } catch (e) {}
+                    }, 1400);
+                  }
                   return;
                 }
                 return res
@@ -492,7 +522,11 @@
                 signupErr.hidden = false;
               })
               .finally(function () {
-                if (submitBtn) submitBtn.disabled = false;
+                if (submitBtn && !signupForm.hidden) {
+                  submitBtn.disabled = false;
+                  submitBtn.removeAttribute("aria-busy");
+                  submitBtn.textContent = submitBtn.dataset.labelDefault || "submit";
+                }
               });
           });
         }

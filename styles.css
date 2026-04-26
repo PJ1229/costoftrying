@@ -1145,7 +1145,8 @@ a {
   margin: 0 0 8px;
   font-size: 15px;
   line-height: 1.5;
-  color: rgba(17, 17, 17, 0.75);
+  color: #111111;
+  font-weight: 600;
   text-align: center;
 }
 
