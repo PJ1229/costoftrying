@@ -8,11 +8,13 @@ Use this when editing `index.html`, `retreat.html`, `styles.css`, or copy.
 
 ## Voice
 
-- The page is in PJ's lowercase voice. Quotes stay verbatim, including his capitalization and typos.
+- The page is in PJ's lowercase voice. Keep that voice. Fix real spelling and grammar slips.
+- v1, shift, and the midnight club are plain text links in his sentences, not a logo strip or a "we've partnered with" block.
 - Do not invent facts, dates, or numbers.
 - Do not add unreleased or private events.
 - Do not restore the fall Sunday sessions line.
-- Do not add partner logos or a partner section. v1, shift, and tmc appear only as plain text in his sentences.
+- Do not add partner logos or a partner section.
+- The events archive has a reserved HTML comment for the ostar rave. Do not invent that entry.
 - One small photo per event in the archive. No hero image.
 
 ## Typography
