@@ -3,7 +3,7 @@
   --body: rgba(17, 17, 17, 0.6);
   --paper: #ffffff;
   --measure: 38em;
-  --rhythm: 32px;
+  --s: 8px;
 }
 
 * {
@@ -64,59 +64,52 @@ a:focus-visible {
   transform: none;
 }
 
-.top {
-  max-width: var(--measure);
-  margin: 0 auto;
-  padding: 28px 24px 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px 28px;
-  align-items: baseline;
-  justify-content: space-between;
-}
-
-.wordmark {
-  color: var(--ink);
-  font-weight: 500;
-  text-decoration: none;
-}
-
-.nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 18px;
-}
-
-.nav a {
-  color: var(--body);
-  text-decoration: none;
-}
-
-.nav a:hover,
-.nav a:focus-visible {
-  color: var(--ink);
-  text-decoration: underline;
-}
-
 .page {
   max-width: var(--measure);
   margin: 0 auto;
-  padding: 72px 24px 120px;
+  padding: calc(var(--s) * 5) 24px calc(var(--s) * 8);
 }
 
 .hero,
 .block,
 .event {
-  display: grid;
-  gap: var(--rhythm);
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--s) * 2);
 }
 
 .block {
-  margin-top: 112px;
+  margin-top: calc(var(--s) * 6);
 }
 
-.event + .event {
-  margin-top: 96px;
+.hero > h1 + *,
+.block > h2 + *,
+.event > h3 + * {
+  margin-top: calc(var(--s) * -1);
+}
+
+.block > h3 {
+  margin-top: var(--s);
+}
+
+.block > h2 + h3 {
+  margin-top: calc(var(--s) * -1);
+}
+
+.block > h3 + * {
+  margin-top: calc(var(--s) * -1);
+}
+
+blockquote + blockquote {
+  margin-top: calc(var(--s) * -1);
+}
+
+#events {
+  gap: calc(var(--s) * 4);
+}
+
+#events > h2 + * {
+  margin-top: calc(var(--s) * -3);
 }
 
 h1,
@@ -145,7 +138,7 @@ h2 {
 }
 
 h3 {
-  margin-top: 8px;
+  margin-top: 0;
   font-size: 17px;
   font-weight: 600;
   line-height: 1.62;
@@ -169,7 +162,7 @@ figcaption,
 }
 
 .meta {
-  margin-top: -12px;
+  margin-top: 0;
 }
 
 blockquote {
@@ -186,7 +179,7 @@ blockquote {
 .event-figure {
   margin: 0;
   display: grid;
-  gap: 10px;
+  gap: var(--s);
   justify-items: start;
 }
 
@@ -202,7 +195,7 @@ figcaption {
 
 .signup {
   display: grid;
-  gap: 10px;
+  gap: var(--s);
   max-width: 320px;
 }
 
@@ -254,7 +247,7 @@ figcaption {
 
 .signup-submit {
   justify-self: start;
-  margin: 6px 0 0;
+  margin: var(--s) 0 0;
   padding: 0;
   border: 0;
   background: none;
@@ -279,27 +272,28 @@ figcaption {
 
 .links {
   list-style: none;
-  margin: 8px 0 0;
+  margin: 0;
   padding: 0;
-  display: grid;
-  gap: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s) calc(var(--s) * 2);
 }
 
 @media (max-width: 640px) {
-  .top {
-    padding-top: 22px;
-  }
-
   .page {
-    padding: 48px 20px 88px;
+    padding: calc(var(--s) * 4) 20px calc(var(--s) * 6);
   }
 
   .block {
-    margin-top: 80px;
+    margin-top: calc(var(--s) * 5);
   }
 
-  .event + .event {
-    margin-top: 72px;
+  #events {
+    gap: calc(var(--s) * 3);
+  }
+
+  #events > h2 + * {
+    margin-top: calc(var(--s) * -2);
   }
 
   h1 {
