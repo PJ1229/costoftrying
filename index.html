@@ -6,15 +6,17 @@
     <title>costoftrying</title>
     <meta
       name="description"
-      content="Building communities and inspiring creators through stories and events."
+      content="connect with people, connect people, and tell their stories."
     />
+    <!-- Why it's called "cost of trying": no one-line definition in his notes. The philosophy page still says TBD. -->
     <link rel="icon" type="image/svg+xml" href="images/logo/favicon.svg" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <!-- Google tag (gtag.js) -->
+    <link rel="stylesheet" href="styles.css" />
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-NFNSK0Q60Y"
@@ -25,199 +27,206 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
       gtag("config", "G-NFNSK0Q60Y");
     </script>
   </head>
-  <body class="minimal-page">
-    <main class="minimal">
-      <header class="minimal-header">
-        <p class="minimal-headline">
-          building communities &amp;<br />
-          inspiring creators
-        </p>
-        <div class="minimal-vibes intro">
-          <div class="retreat-feature-audio">
-            <audio
-              class="retreat-feature-audio__player"
-              controls
-              preload="metadata"
-              src="music/fred-again-dermot-see-yourself-in-my-eyes.mp3"
-            >
-              <a
-                href="music/fred-again-dermot-see-yourself-in-my-eyes.mp3"
-                download
-                >download the track</a
-              >
-            </audio>
-          </div>
-          <p>(play this for vibes while you scroll)</p>
-        </div>
-        <p class="minimal-subhead">
-          the best ideas are created through diverse and inclusive communities.
-          we are amplifying these communities through stories and events.
-        </p>
-      </header>
+  <body>
+    <a class="skip" href="#content">skip to the writing</a>
+    <header class="top">
+      <a class="wordmark" href="index.html">costoftrying</a>
+      <nav class="nav" aria-label="on this page">
+        <a href="#philosophy">philosophy</a>
+        <a href="#events">events</a>
+        <a href="#involved">get involved</a>
+      </nav>
+    </header>
 
-      <section class="intro retreat-stack">
+    <main id="content" class="page">
+      <section class="hero" aria-labelledby="thesis">
+        <h1 id="thesis">
+          it's always been easy to determine what I want to do with my life.,
+          and that's to connect with people, connect people, and tell their
+          stories.
+        </h1>
         <p>
-          we just hosted a retreat with 20+ creatively ambitious strangers in
-          northern michigan with
-          <a
-            href="https://www.instagram.com/themidnight.collective/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >the midnight club</a
-          >, to explore projects they’ve always wanted to.
+          i see this page as the entirety of my creative endeavors. i want to
+          be able to align all my creative work with this project. i think a
+          lot of my struggle in creative work is finding direction and making
+          sure the tree is well trimmed. what i mean by this is cutting off
+          branches that don't fit the shape i envision or that stunt the growth
+          of the tree.
         </p>
-        <button
-          type="button"
-          class="retreat-next-btn js-open-retreat-dialog"
-          id="open-retreat-dialog"
-          aria-haspopup="dialog"
-          aria-controls="retreat-dialog"
-        >
-          to be a part of the next one - stay in touch
-        </button>
-        <div class="feature-video" aria-label="Retreat recap video">
-          <div class="photo-wrapper photo-wrapper--embed">
-            <div
-              class="minimal-embed-youtube"
-              data-youtube-id="Eb6kjOybPdw"
-              data-youtube-title="TMC retreat trailer"
-            >
-              <button
-                type="button"
-                class="minimal-embed-youtube__facade"
-                aria-label="Play TMC retreat trailer"
-              >
-                <img
-                  src="https://img.youtube.com/vi/Eb6kjOybPdw/maxresdefault.jpg"
-                  alt=""
-                  width="1280"
-                  height="720"
-                  loading="lazy"
-                  decoding="async"
-                  fetchpriority="low"
-                />
-                <span class="minimal-embed-youtube__play" aria-hidden="true"></span>
-              </button>
-            </div>
-          </div>
-        </div>
+        <p>
+          currently, i'm in three "builder-esque" communities:
+          <a href="https://v1michigan.com/">v1</a>,
+          <a href="https://shiftcreator.space/">shift</a>, and
+          <a href="https://www.instagram.com/themidnight.collective/">tmc</a>.
+          my vision with costoftrying is to be able to amplify all three of
+          these communities while still fitting my philosophy. the end goal is
+          to learn how to build my own community surrounding this philosophy.
+        </p>
+        <p>
+          <a class="cta" href="https://tally.so/r/44xJgd">tell me your story</a>
+        </p>
       </section>
 
-      <section class="partners" aria-labelledby="partners-heading">
-        <p class="minimal-eyebrow" id="partners-heading">we've partnered with</p>
-        <ul class="partners-logos">
-          <li>
-            <a
-              href="https://www.instagram.com/themidnight.collective/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="partners-logo-link"
-            >
-              <img
-                src="images/partners/tmc.png"
-                alt="The Midnight Club"
-                loading="lazy"
-                decoding="async"
-              />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://v1michigan.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="partners-logo-link partners-logo-link--invert"
-            >
-              <img
-                src="images/partners/v1.png"
-                alt="V1 Michigan"
-                loading="lazy"
-                decoding="async"
-              />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://shiftcreator.space/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="partners-logo-link partners-logo-link--invert partners-logo-link--crush"
-            >
-              <img
-                src="images/partners/shift.png"
-                alt="Shift"
-                loading="lazy"
-                decoding="async"
-              />
-            </a>
-          </li>
-        </ul>
+      <section class="block" id="philosophy" aria-labelledby="philosophy-title">
+        <h2 id="philosophy-title">the philosophy</h2>
+
+        <h3>anyone gets a space</h3>
+        <blockquote>
+          <p>
+            I believe that literally anyone should be able to go to a midnight
+            club and start working towards the goals they have.
+          </p>
+        </blockquote>
+        <blockquote>
+          <p>especially those who are more shy and have less faith in their goals.</p>
+        </blockquote>
+
+        <h3>creative mobility</h3>
+        <blockquote>
+          <p>
+            centered around providing creative mobility to everyone. Generally
+            people who want to try something new should be able to have the
+            faith that they can do it.
+          </p>
+        </blockquote>
+
+        <h3>anti-instrumentalist</h3>
+        <blockquote>
+          <p>I suggest taking on an anti-instrumentalist philosophy</p>
+        </blockquote>
+        <blockquote>
+          <p>
+            We want our culture to reflect a group where people participate for
+            the sake of belief and enjoyment of their idea rather than to get
+            something out of it.
+          </p>
+        </blockquote>
+        <blockquote>
+          <p>the means are just as if not more important than the ends.</p>
+        </blockquote>
+        <blockquote>
+          <p>the means are themselves valuable.</p>
+        </blockquote>
+
+        <h3>no ego</h3>
+        <blockquote>
+          <p>
+            We don't want positions in the club and we want an expressed lack of
+            ego
+          </p>
+        </blockquote>
       </section>
 
-      <hr class="minimal-rule" />
+      <section class="block" id="process" aria-labelledby="process-title">
+        <h2 id="process-title">how events come together</h2>
 
-      <section class="intro minimal-block" aria-labelledby="building-heading">
-        <p class="minimal-block-title" id="building-heading">what we're building</p>
+        <h3>open applications</h3>
         <p>
-          some of the most interesting people are already out there, in your
-          school, your city, your community, with projects they've been sitting
-          on and passions they haven't had the time to explore. they just
-          haven't found each other yet.
+          for the tmc retreat, applications went through an open
+          <a href="https://forms.gle/8XATZUz2pXuhP6XW7">form</a>.
         </p>
+
+        <h3>separate calls</h3>
+        <p>engineers, filmmakers, and musicians.</p>
+
+        <h3>sponsors</h3>
+        <blockquote>
+          <p>
+            with the help from sponsors like Figma, my friends and I hosted a
+            creative retreat under a club called The Midnight Collective
+          </p>
+        </blockquote>
+
+        <h3>a $0 budget</h3>
         <p>
-          we help existing communities create the space for that to happen.
-          through video and storytelling, events, and growth marketing when a
-          story is ready to find its people, we amplify
-          what's already there, connecting the creative and technical people who
-          are ready to finally try something.
+          project unsanctioned. $0 budget. 182-clip hero film. 100K+
+          impressions. +144 followers. 361 RSVPs. ~250 attended.
         </p>
-        <div
-          class="minimal-block-clip"
-          role="group"
-          aria-label="Short muted clip (loops)"
-        >
-          <div class="minimal-youtube-clip">
-            <iframe
-              src="https://www.youtube.com/embed/aO7lKvHd0B8?autoplay=1&mute=1&loop=1&playlist=aO7lKvHd0B8&modestbranding=1&playsinline=1&controls=0&fs=0&rel=0"
-              title="Short clip related to what we're building (muted, looping)"
-              width="560"
-              height="315"
-              tabindex="-1"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-            <span
-              class="minimal-youtube-clip__shield"
-              aria-hidden="true"
-            ></span>
-          </div>
-        </div>
       </section>
 
-      <hr class="minimal-rule" />
+      <section class="block" id="events" aria-labelledby="events-title">
+        <h2 id="events-title">events</h2>
+        <!-- Other frames are in images/ and stay off the page: tmc-retreat-b, tmc-retreat-dscn2611, tmc-retreat-trailer-frame, unsanctioned-social-1, unsanctioned-social-3. One photo per event. No photographer is named for the tmc retreat. -->
 
-      <section
-        class="intro minimal-block minimal-block--with-ctas"
-        aria-labelledby="next-heading"
-      >
-        <p class="minimal-block-title" id="next-heading">what's next.</p>
+        <article class="event" id="tmc-retreat">
+          <h3>tmc retreat</h3>
+          <p class="meta">march 2026, northern michigan</p>
+          <figure class="event-figure">
+            <img
+              src="images/tmc-retreat-a.jpg"
+              alt="People around a table at the tmc retreat."
+              width="1500"
+              height="2000"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+          <p>
+            we just hosted a retreat with 20+ creatively ambitious strangers in
+            northern michigan with
+            <a href="https://www.instagram.com/themidnight.collective/"
+              >the midnight club</a
+            >, to explore projects they've always wanted to.
+          </p>
+          <p>
+            <a href="https://www.youtube.com/watch?v=Eb6kjOybPdw">trailer</a>
+          </p>
+        </article>
+
+        <article class="event" id="unsanctioned">
+          <h3>project unsanctioned</h3>
+          <p class="meta">2026</p>
+          <figure class="event-figure">
+            <img
+              src="images/unsanctioned-still.jpg"
+              alt="A crowded room during project unsanctioned."
+              width="2000"
+              height="1125"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Photography: Michael Counts.</figcaption>
+          </figure>
+          <p>
+            Multi-shooter rave promo for OSTAR × House Bl3nd, shot on Sony FX3
+            (S-Log3) with camcorder + stills coverage.
+          </p>
+          <p>
+            Directed by: Irwin Patcharaput · PJ Kim. Edited by: PJ Kim. Color
+            by: PJ Kim. Photography: Michael Counts. Presented by: OSTAR × House
+            Bl3nd.
+          </p>
+          <p>
+            House Bl3nd Studio (Jimmy, Johnny &amp; Anthony Nguyen · Russell
+            Industrial Center, Detroit).
+          </p>
+          <p>
+            $0 budget. 182-clip hero film. 100K+ impressions. +144 followers.
+            361 RSVPs. ~250 attended.
+          </p>
+          <p>
+            <a href="https://www.youtube.com/watch?v=FLqxwn8_9xI">video</a>
+            <br />
+            <a href="https://pjk1m.com/unsanctioned">pjk1m.com/unsanctioned</a>
+          </p>
+        </article>
+      </section>
+
+      <section class="block" id="involved" aria-labelledby="involved-title">
+        <h2 id="involved-title">get involved</h2>
+        <blockquote>
+          <p>
+            If this is writing is something that resonates with you however,
+            please let me know. I love talking to people and meeting people,
+            and I believe the more perspectives I have the more beautiful the
+            story I create becomes.
+          </p>
+        </blockquote>
         <p>
-          this fall, we're partnering with
-          <a
-            href="https://www.instagram.com/themidnight.collective/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >the midnight club</a
-          >
-          to bring weekly sunday night work sessions to their community, open
-          drop-in time for anyone to show up and work on whatever they've been
-          putting off. no agenda, no pressure. just a room full of people doing
-          the thing.
+          <a class="cta" href="https://tally.so/r/44xJgd">tell me your story</a>
         </p>
         <p>
           we're always looking for communities to work with. if you're building
@@ -225,82 +234,19 @@
           people,
           <a href="mailto:costoftrying@gmail.com">reach out</a>.
         </p>
-        <div
-          class="minimal-block-clip"
-          role="group"
-          aria-label="Short muted clip (loops)"
-        >
-          <div class="minimal-youtube-clip">
-            <iframe
-              src="https://www.youtube.com/embed/g_yV5CzVu2w?autoplay=1&mute=1&loop=1&playlist=g_yV5CzVu2w&modestbranding=1&playsinline=1&controls=0&fs=0&rel=0"
-              title="Short clip related to what's next (muted, looping)"
-              width="560"
-              height="315"
-              tabindex="-1"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-            <span
-              class="minimal-youtube-clip__shield"
-              aria-hidden="true"
-            ></span>
-          </div>
-        </div>
-        <div class="next-ctas" role="group" aria-label="get updates">
-          <button
-            type="button"
-            class="retreat-next-btn js-open-retreat-dialog"
-            aria-haspopup="dialog"
-            aria-controls="retreat-dialog"
-          >
-            keep updated
-          </button>
-        </div>
-      </section>
 
-      <section class="intro intro--footer">
-        <p>
-          more soon. follow
-          <a
-            href="https://www.instagram.com/costoftrying/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >@costoftrying</a
-          >
-        </p>
-      </section>
-    </main>
-
-    <dialog class="signup-dialog" id="retreat-dialog" aria-labelledby="retreat-dialog-title">
-      <div class="signup-dialog__panel">
-        <button type="button" class="signup-dialog__close" aria-label="Close">
-          ×
-        </button>
-        <h2 class="signup-dialog__title" id="retreat-dialog-title">next event</h2>
-        <p class="signup-dialog__body">
-          next event is in the works. add your email for first updates on dates,
-          location, and how to join once we're ready to share. day-to-day lives
-          on instagram
-          <a
-            href="https://www.instagram.com/costoftrying/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >@costoftrying</a
-          >.
-        </p>
         <form
-          class="signup-dialog__form"
-          id="retreat-signup-form"
+          class="signup"
+          id="signup-form"
           action="https://formspree.io/f/xjgjzpbl"
           method="POST"
         >
-          <label class="signup-dialog__label" for="retreat-email">email</label>
+          <label class="signup-label" for="signup-email">email</label>
           <input
             type="email"
-            id="retreat-email"
+            id="signup-email"
             name="email"
-            class="signup-dialog__input"
+            class="signup-input"
             autocomplete="email"
             inputmode="email"
             placeholder="you@example.com"
@@ -309,227 +255,89 @@
           <input
             type="text"
             name="_gotcha"
-            class="signup-dialog__hp"
+            class="signup-hp"
             tabindex="-1"
             autocomplete="off"
             aria-hidden="true"
           />
-          <input type="hidden" name="_subject" value="costoftrying: next event interest" />
-          <p class="signup-dialog__error" id="retreat-signup-error" role="alert" hidden></p>
-          <button type="submit" class="signup-dialog__submit">stay in touch</button>
+          <input type="hidden" name="_subject" value="costoftrying: updates" />
+          <p class="signup-error" id="signup-error" role="alert" hidden></p>
+          <button type="submit" class="signup-submit">stay in touch</button>
+          <p class="signup-note">we only use this for event updates.</p>
         </form>
-        <p class="signup-dialog__success" id="retreat-signup-success" hidden>
-          you’re on the list. talk soon.
-        </p>
-        <p class="signup-dialog__note">we only use this for event updates.</p>
-      </div>
-    </dialog>
+        <p class="signup-success" id="signup-success" hidden>you're on the list.</p>
+
+        <ul class="links">
+          <li><a href="mailto:costoftrying@gmail.com">costoftrying@gmail.com</a></li>
+          <li>
+            <a href="https://www.instagram.com/costoftrying/">@costoftrying</a>
+          </li>
+          <li><a href="https://www.instagram.com/pj.k1m/">@pj.k1m</a></li>
+          <li><a href="https://substack.com/@pjk1m">substack</a></li>
+          <li><a href="https://pjk1m.com">pjk1m.com</a></li>
+        </ul>
+      </section>
+    </main>
 
     <script>
       (function () {
-        function wireEmbed(wrap) {
-          var id = wrap.dataset.youtubeId;
-          var title = wrap.dataset.youtubeTitle || "YouTube video";
-          var btn = wrap.querySelector(".minimal-embed-youtube__facade");
-          if (!id || !btn) return;
-          btn.addEventListener("click", function () {
-            var shell = document.createElement("div");
-            shell.className = "video-frame video-frame--embed";
-            var iframe = document.createElement("iframe");
-            var params = new URLSearchParams({
-              autoplay: "1",
-              mute: "1",
-              enablejsapi: "1",
-              modestbranding: "1",
-              playsinline: "1",
-              controls: "0",
-              fs: "0",
-              rel: "0",
-            });
-            if (/^https?:$/i.test(location.protocol)) {
-              params.set("origin", location.origin);
+        var form = document.getElementById("signup-form");
+        var err = document.getElementById("signup-error");
+        var ok = document.getElementById("signup-success");
+        if (!form || !err || !ok) return;
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          err.hidden = true;
+          err.textContent = "";
+          var action = form.getAttribute("action") || "";
+          var button = form.querySelector(".signup-submit");
+          if (button) {
+            if (!button.dataset.labelDefault) {
+              button.dataset.labelDefault = button.textContent || "stay in touch";
             }
-            iframe.src =
-              "https://www.youtube.com/embed/" +
-              encodeURIComponent(id) +
-              "?" +
-              params.toString();
-            iframe.title = title;
-            iframe.setAttribute(
-              "allow",
-              "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            );
-            iframe.setAttribute("allowfullscreen", "");
-            iframe.referrerPolicy = "strict-origin-when-cross-origin";
-            shell.appendChild(iframe);
-            wrap.replaceChildren(shell);
-
-            var ytOrigin = "https://www.youtube.com";
-            function postMute() {
-              try {
-                if (!iframe.contentWindow) return;
-                iframe.contentWindow.postMessage(
-                  JSON.stringify({
-                    event: "command",
-                    func: "mute",
-                    args: "",
-                    id: 1,
-                  }),
-                  ytOrigin
-                );
-              } catch (e) {}
-            }
-            var lastRemuteMs = 0;
-            function onYtPlayerMessage(ev) {
-              if (ev.source !== iframe.contentWindow || ev.origin !== ytOrigin) return;
-              if (typeof ev.data !== "string") return;
-              var now = Date.now();
-              if (now - lastRemuteMs < 180) return;
-              lastRemuteMs = now;
-              if (
-                ev.data.indexOf("infoDelivery") !== -1 ||
-                ev.data.indexOf("onStateChange") !== -1
-              ) {
-                postMute();
+            button.disabled = true;
+            button.setAttribute("aria-busy", "true");
+            button.textContent = "sending...";
+          }
+          fetch(action, {
+            method: "POST",
+            body: new FormData(form),
+            headers: { Accept: "application/json" },
+          })
+            .then(function (res) {
+              if (res.ok) {
+                form.hidden = true;
+                ok.hidden = false;
+                if (button) button.removeAttribute("aria-busy");
+                return;
               }
-            }
-            window.addEventListener("message", onYtPlayerMessage);
-            iframe.addEventListener("load", function onMainEmbedLoad() {
-              iframe.removeEventListener("load", onMainEmbedLoad);
-              postMute();
-              setTimeout(postMute, 400);
-              setTimeout(postMute, 1200);
-            });
-          });
-        }
-        document.querySelectorAll(".minimal-embed-youtube").forEach(wireEmbed);
-
-        var dialog = document.getElementById("retreat-dialog");
-        var closeBtn = dialog && dialog.querySelector(".signup-dialog__close");
-        if (dialog) {
-          document.querySelectorAll(".js-open-retreat-dialog").forEach(function (btn) {
-            btn.addEventListener("click", function () {
-              dialog.showModal();
-            });
-          });
-        }
-        if (dialog && closeBtn) {
-          closeBtn.addEventListener("click", function () {
-            dialog.close();
-          });
-        }
-        if (dialog) {
-          dialog.addEventListener("click", function (e) {
-            if (e.target === dialog) {
-              dialog.close();
-            }
-          });
-          dialog.addEventListener("close", function () {
-            var f = document.getElementById("retreat-signup-form");
-            var ok = document.getElementById("retreat-signup-success");
-            var err = document.getElementById("retreat-signup-error");
-            var note = dialog.querySelector(".signup-dialog__note");
-            var submitBtn = f && f.querySelector(".signup-dialog__submit");
-            if (f && ok) {
-              f.hidden = false;
-              f.reset();
-              ok.hidden = true;
-            }
-            if (err) {
-              err.hidden = true;
-              err.textContent = "";
-            }
-            if (note) note.hidden = false;
-            if (submitBtn) {
-              submitBtn.disabled = false;
-              submitBtn.removeAttribute("aria-busy");
-              if (submitBtn.dataset.labelDefault) {
-                submitBtn.textContent = submitBtn.dataset.labelDefault;
-              }
-            }
-          });
-        }
-
-        var signupForm = document.getElementById("retreat-signup-form");
-        var signupErr = document.getElementById("retreat-signup-error");
-        var signupOk = document.getElementById("retreat-signup-success");
-        if (signupForm && signupErr && signupOk) {
-          signupForm.addEventListener("submit", function (e) {
-            e.preventDefault();
-            signupErr.hidden = true;
-            signupErr.textContent = "";
-            var action = signupForm.getAttribute("action") || "";
-            if (action.indexOf("YOUR_FORM_ID") !== -1) {
-              signupErr.textContent =
-                "add your Formspree id: replace YOUR_FORM_ID in the form action in index.html.";
-              signupErr.hidden = false;
-              return;
-            }
-            var submitBtn = signupForm.querySelector(".signup-dialog__submit");
-            var note = dialog && dialog.querySelector(".signup-dialog__note");
-            if (submitBtn) {
-              if (!submitBtn.dataset.labelDefault) {
-                submitBtn.dataset.labelDefault = submitBtn.textContent || "submit";
-              }
-              submitBtn.disabled = true;
-              submitBtn.setAttribute("aria-busy", "true");
-              submitBtn.textContent = "sending...";
-            }
-            var fd = new FormData(signupForm);
-            fetch(action, {
-              method: "POST",
-              body: fd,
-              headers: { Accept: "application/json" },
+              return res
+                .json()
+                .then(function (data) {
+                  var msg =
+                    (data && data.error) ||
+                    (data.errors && data.errors[0] && data.errors[0].message) ||
+                    "something went wrong. try again in a moment.";
+                  err.textContent = msg;
+                  err.hidden = false;
+                })
+                .catch(function () {
+                  err.textContent = "something went wrong. try again in a moment.";
+                  err.hidden = false;
+                });
             })
-              .then(function (res) {
-                if (res.ok) {
-                  signupForm.hidden = true;
-                  signupOk.hidden = false;
-                  if (note) note.hidden = true;
-                  if (submitBtn) {
-                    submitBtn.textContent = "added";
-                    submitBtn.removeAttribute("aria-busy");
-                  }
-                  if (dialog) {
-                    setTimeout(function () {
-                      try {
-                        dialog.close();
-                      } catch (e) {}
-                    }, 1400);
-                  }
-                  return;
-                }
-                return res
-                  .json()
-                  .then(function (data) {
-                    var msg =
-                      (data && data.error) ||
-                      (data.errors &&
-                        data.errors[0] &&
-                        data.errors[0].message) ||
-                      "something went wrong. try again in a moment.";
-                    signupErr.textContent = msg;
-                    signupErr.hidden = false;
-                  })
-                  .catch(function () {
-                    signupErr.textContent =
-                      "something went wrong. try again in a moment.";
-                    signupErr.hidden = false;
-                  });
-              })
-              .catch(function () {
-                signupErr.textContent = "couldn’t reach the form. check your connection.";
-                signupErr.hidden = false;
-              })
-              .finally(function () {
-                if (submitBtn && !signupForm.hidden) {
-                  submitBtn.disabled = false;
-                  submitBtn.removeAttribute("aria-busy");
-                  submitBtn.textContent = submitBtn.dataset.labelDefault || "submit";
-                }
-              });
-          });
-        }
+            .catch(function () {
+              err.textContent = "couldn't reach the form. check your connection.";
+              err.hidden = false;
+            })
+            .finally(function () {
+              if (button && !form.hidden) {
+                button.disabled = false;
+                button.removeAttribute("aria-busy");
+                button.textContent = button.dataset.labelDefault || "stay in touch";
+              }
+            });
+        });
       })();
     </script>
   </body>
