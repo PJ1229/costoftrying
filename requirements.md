@@ -32,4 +32,4 @@ One body tier for prose, captions, and the email note: 17px, line-height 1.62, w
 - `retreat.html` for the tmc retreat
 - `styles.css`
 - `CNAME` stays `costoftrying.com`
-- Photos live in `images/`. The page shows `tmc-retreat-a.jpg` and `unsanctioned-still.jpg` only.
+- Photos live in `images/`. The page shows `tmc-retreat-lake.jpg`, `ostar-rave.jpg`, and `unsanctioned-still.jpg` only. The retreat photo stays full frame at 4:3.
