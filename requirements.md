@@ -14,7 +14,7 @@ Use this when editing `index.html`, `retreat.html`, `styles.css`, or copy.
 - Do not add unreleased or private events.
 - Do not restore the fall Sunday sessions line.
 - Do not add partner logos or a partner section.
-- The events archive has a reserved HTML comment for the ostar rave. Do not invent that entry.
+- Events are ordered by date: tmc retreat (march 2026), gotta gotcha rave (august 2026), project unsanctioned (2026, no month confirmed).
 - One small photo per event in the archive. No hero image.
 
 ## Typography
